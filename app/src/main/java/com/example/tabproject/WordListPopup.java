@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -36,6 +37,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 public class WordListPopup extends Activity {
 
@@ -73,6 +75,9 @@ public class WordListPopup extends Activity {
         radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
         radioGroup.setOnCheckedChangeListener(radioGroupButtonChangeListener);
 
+        if(opt==1){
+            radioGroup.setVisibility(View.GONE);
+        }
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

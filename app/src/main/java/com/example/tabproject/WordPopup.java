@@ -62,6 +62,8 @@ public class WordPopup extends Activity {
     Button add_button;
     TextView translationText;
     TextView resultText;
+    TextView country;
+
 
     String k_word;
     String e_word;
@@ -83,6 +85,7 @@ public class WordPopup extends Activity {
         add_button = (Button)findViewById(R.id.add);
         translationText = (TextView)findViewById(R.id.translationText);
         resultText = (TextView)findViewById(R.id.resultText);
+        country = (TextView)findViewById(R.id.country);
 
         //음성인식
 
@@ -91,6 +94,16 @@ public class WordPopup extends Activity {
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ko-KR");
         mRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
         mRecognizer.setRecognitionListener(listener);
+
+        if(wordlist_lan.equals("en")){
+            country.setText("영어:");
+        }
+        if(wordlist_lan.equals("ja")){
+            country.setText("일본어:");
+        }
+        if(wordlist_lan.equals("ch")){
+            country.setText("중국어:");
+        }
 
         record_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -190,7 +203,9 @@ public class WordPopup extends Activity {
                 task.execute(URL, wordlist_id, k_word, e_word);
 
                 // 프래그먼트 3번으로 바로 가야 하는디....
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Words.class);
+                intent.putExtra("wordlist_id", wordlist_id);
+                intent.putExtra("wordlist_lan", wordlist_lan);
                 startActivity(intent);
             }
         });
