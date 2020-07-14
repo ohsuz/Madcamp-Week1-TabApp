@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.GridView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +61,11 @@ public class Fragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_2, container, false);
+        FrameLayout layout = (FrameLayout)inflater.inflate(R.layout.fragment_2, container, false);
+        GridView gv = (GridView) layout.findViewById(R.id.gridView1);
+        MyGridAdapter gAdapter = new MyGridAdapter(getActivity());
+        gv.setAdapter(gAdapter);
+
+        return layout;
     }
 }

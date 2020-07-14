@@ -257,6 +257,7 @@ public class WordPopup extends Activity {
             mResult.toArray(rs);
             k_word = ""+rs[0];
             translationText.setText(k_word);
+            resultText.setText("");
         }
 
 

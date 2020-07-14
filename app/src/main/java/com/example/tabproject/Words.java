@@ -86,7 +86,7 @@ public class Words extends AppCompatActivity {
                 @Override
                 public void onInit(int status) {
                     if(status == TextToSpeech.SUCCESS){
-                        tts.setLanguage(Locale.JAPANESE);
+                        tts.setLanguage(Locale.KOREAN);
                         tts.setSpeechRate(0.8f);
                     }else{
                         Toast.makeText(getApplicationContext(), "TTS 작업에 실패하였습니다.", Toast.LENGTH_SHORT).show();
@@ -99,7 +99,7 @@ public class Words extends AppCompatActivity {
                 @Override
                 public void onInit(int status) {
                     if(status == TextToSpeech.SUCCESS){
-                        tts.setLanguage(Locale.CHINESE);
+                        tts.setLanguage(Locale.KOREAN);
                         tts.setSpeechRate(0.8f);
                     }else{
                         Toast.makeText(getApplicationContext(), "TTS 작업에 실패하였습니다.", Toast.LENGTH_SHORT).show();
@@ -126,7 +126,6 @@ public class Words extends AppCompatActivity {
             @Override
             public void onClick(View view, int position) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    Toast.makeText(getApplicationContext(), words.get(position).getE_word(), Toast.LENGTH_SHORT).show();
                     tts.speak(words.get(position).getE_word(), TextToSpeech.QUEUE_FLUSH, null, null);
                     // API 20
                 }else {
