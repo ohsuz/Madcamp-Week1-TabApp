@@ -28,6 +28,10 @@
         <activity android:name=".Words"/>
         <activity android:name=".WordPopup" android:theme="@android:style/Theme.Dialog"/>
 
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key"/>
+
     </application>
 
 </manifest>

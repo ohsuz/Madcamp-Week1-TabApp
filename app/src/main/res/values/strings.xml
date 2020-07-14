@@ -7,4 +7,6 @@
     <string name="tab1">PHONE BOOK</string>
     <string name="tab2">GALLERY</string>
     <string name="tab3">VOCA</string>
+
+    <string name="kakao_app_key">fc96d3939fa8efd4459c91e13cd2711d</string>
 </resources>

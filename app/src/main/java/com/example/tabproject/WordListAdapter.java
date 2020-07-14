@@ -1,9 +1,13 @@
 package com.example.tabproject;
 
 import android.content.Context;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -23,11 +27,14 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordLi
     // 레이아웃 파일에 있는 UI 컴포넌트를 WordListViewHolder 클래스의 멤버 변수와 연결
     public class WordListViewHolder extends RecyclerView.ViewHolder{
         TextView wordlist;
+        ImageView country;
 
         public WordListViewHolder(View view){
             super(view);
             wordlist = (TextView)view.findViewById(R.id.wordlist);
+            country = (ImageView)view.findViewById(R.id.country);
         }
+
     }
 
     @NonNull
@@ -41,6 +48,13 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordLi
    @Override
     public void onBindViewHolder(@NonNull WordListViewHolder viewholder, int position) {
         viewholder.wordlist.setText(wlist.get(position).getWordlist());
+        if(wlist.get(position).getLan().equals("en")){
+            viewholder.country.setImageResource(R.drawable.ic_en);
+        }else if(wlist.get(position).getLan().equals("ja")){
+            viewholder.country.setImageResource(R.drawable.ic_ja);
+       }else{
+            viewholder.country.setImageResource(R.drawable.ic_ch);
+       }
     }
 
     @Override

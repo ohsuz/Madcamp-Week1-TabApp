@@ -47,6 +47,7 @@ public class WordPopup extends Activity {
     private static String TAG = "insert";
 
     String wordlist_id;
+    String wordlist_lan;
 
     //음성인식 관련 변수
     Intent intent;
@@ -75,6 +76,7 @@ public class WordPopup extends Activity {
 
         Intent gintent = getIntent();
         wordlist_id = gintent.getStringExtra("wordlist_id");
+        wordlist_lan = gintent.getStringExtra("wordlist_lan");
 
         record_button = (Button)findViewById(R.id.record);
         translation_button = (Button)findViewById(R.id.translation);
@@ -118,6 +120,7 @@ public class WordPopup extends Activity {
                         try{
                             String text = URLEncoder.encode(translationText.getText().toString(), "UTF-8");
                             String apiURL = "https://openapi.naver.com/v1/papago/n2mt";
+                            String postParams;
 
                             //파파고 API와 연결
                             URL url = new URL(apiURL);
@@ -127,7 +130,13 @@ public class WordPopup extends Activity {
                             con.setRequestProperty("X-Naver-Client-Secret", clientSecret);
 
                             //번역할 문장을 파라미터로 전송
-                            String postParams = "source=ko&target=en&text=" + text;
+                            if(wordlist_lan.equals("en")){
+                                postParams = "source=ko&target=en&text=" + text;
+                            }else if(wordlist_lan.equals("ja")){
+                                postParams = "source=ko&target=ja&text=" + text;
+                            }else{
+                                postParams = "source=ko&target=zh-CN&text=" + text;
+                            }
                             con.setDoOutput(true);
                             DataOutputStream wr = new DataOutputStream(con.getOutputStream());
                             wr.writeBytes(postParams);
@@ -198,6 +207,7 @@ public class WordPopup extends Activity {
 
         @Override
         public void onRmsChanged(float rmsdB) {
+            resultText.setText("녹음중...");
         }
 
         @Override
