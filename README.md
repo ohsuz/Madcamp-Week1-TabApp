@@ -67,7 +67,7 @@ Create a Tab Application with three tabs.
 <img width="19%" src="https://user-images.githubusercontent.com/59340911/91052662-bbc74580-e65c-11ea-8b1d-6e47390b8197.jpg">
 <img width="19%" src="https://user-images.githubusercontent.com/59340911/91052663-bbc74580-e65c-11ea-9117-faaa6918b157.jpg">
 <img width="19%" src="https://user-images.githubusercontent.com/59340911/91052653-b9fd8200-e65c-11ea-8103-dc5e6c6d2156.jpg">
-</div><br><br>
+</div><br>
 
 
 
