@@ -1,13 +1,13 @@
 ## :sparkles:The first project of Mad camp 2020-summer
-Create a Tab Application with three tabs
+Create a Tab Application with three tabs.
 
 ---
 ### :one:  Phone Book
-> Get pictures, names, and phone numbers of contacts stored on the device and show them in a **recycler view**
+> Get pictures, names, and phone numbers of contacts stored on the device and show them in a **recycler view**.
 
 :telephone_receiver: Call Button: Direct dialing to the phone number
 
-:email: Message Button: Write a message in the pop-up window, and send the message by pressing the "확인" button
+:email: Message Button: Write a message in the pop-up window, and send the message by pressing the "확인" button.
 
 <div>
 <img width="19%" src="https://user-images.githubusercontent.com/59340911/91045342-b6183280-e651-11ea-8737-5bbfae9db282.png">
@@ -20,9 +20,9 @@ Create a Tab Application with three tabs
 ---
 
 ### :two:  Gallery
-> Show pictures in a **grid view**
+> Show pictures in a **grid view**.
 
-:camera: Click a picture to zoom in and slide it to see the pictures before and after
+:camera: Click a picture to zoom in and slide it to see the pictures before and after.
 
 ---
 
@@ -30,8 +30,8 @@ Create a Tab Application with three tabs
 > Make your own special vocabulary without the hassle of having to type each word by hand:raised_hand:
 
 :heavy_check_mark: **How to create a vocabulary**
-- Write the name of the vocabulary and select the desired language
-- Modifying or Deleting the vocabulary is also available by long clicking or swiping left
+- Write the name of the vocabulary and select the language you want.
+- Modifying or deleting the vocabulary is also available by long clicking or swiping left.
 
 <div>
 <img width="30%" src="https://user-images.githubusercontent.com/59340911/91049997-ff1fb500-e658-11ea-96cc-fdf1da977467.jpg">
@@ -39,7 +39,7 @@ Create a Tab Application with three tabs
 <img width="30%" src="https://user-images.githubusercontent.com/59340911/91050001-0050e200-e659-11ea-8057-d454bf434ded.jpg">
 </div><br>
 
-:warning: Each vocabulary can contain only words of the language you selected as follows
+:warning: Each vocabulary can contain only words of the language you selected as follows.
 <div>
 <img width="30%" src="https://user-images.githubusercontent.com/59340911/91050003-00e97880-e659-11ea-95ea-a3bb47213eb5.jpg" title="Japanese Voca">
 <img width="30%" src="https://user-images.githubusercontent.com/59340911/91050004-00e97880-e659-11ea-88c4-a6db4ffbe96d.jpg" title="English Voca">
@@ -47,9 +47,9 @@ Create a Tab Application with three tabs
 </div><br>
    
 :heavy_check_mark: **How to add a word**
-- Just press the "녹음" button and say a word! Thanks to **STT(Speech To Text)**, the word you said will be shown in the screen without typing it with your hands
-- Press the "변환" button, then the word is automatically translated into the language of the corresponding vocabulary by using **PAPAGO API**
-- Press the "추가" button to save the word
+- Just press the "녹음" button and say a word! Thanks to **STT(Speech To Text)**, the word you said will be shown in the screen without typing it with your hands.
+- Press the "변환" button, then the word is automatically translated into the language of the corresponding vocabulary by using **PAPAGO API**.
+- Press the "추가" button to save the word.
 > Example 1: English Vocabulary
 <div>
 <img width="19%" src="https://user-images.githubusercontent.com/59340911/91050006-01820f00-e659-11ea-9d5d-47fdfbc78384.jpg">
@@ -67,12 +67,12 @@ Create a Tab Application with three tabs
 <img width="19%" src="https://user-images.githubusercontent.com/59340911/91052662-bbc74580-e65c-11ea-8b1d-6e47390b8197.jpg">
 <img width="19%" src="https://user-images.githubusercontent.com/59340911/91052663-bbc74580-e65c-11ea-9117-faaa6918b157.jpg">
 <img width="19%" src="https://user-images.githubusercontent.com/59340911/91052653-b9fd8200-e65c-11ea-8103-dc5e6c6d2156.jpg">
-</div><br>
+</div><br><br>
 
 
 
 :heavy_check_mark: **Anything else?**
-- We use **TTS(Text To Speech)** to make people hear the pronunciation of the word easily by just clicking on it
+- We use **TTS(Text To Speech)** to make people hear the pronunciation of the word easily by just clicking on it.
 
 ---
 
