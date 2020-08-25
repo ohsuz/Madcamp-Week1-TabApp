@@ -39,7 +39,7 @@ Create a Tab Application with three tabs.
 <img width="30%" src="https://user-images.githubusercontent.com/59340911/91050001-0050e200-e659-11ea-8057-d454bf434ded.jpg">
 </div><br>
 
-:warning: Each vocabulary can contain only words of the language you selected as follows.
+:warning: Each vocabulary can only contain words of the language you selected when you made the vocabulary.
 <div>
 <img width="30%" src="https://user-images.githubusercontent.com/59340911/91050003-00e97880-e659-11ea-95ea-a3bb47213eb5.jpg" title="Japanese Voca">
 <img width="30%" src="https://user-images.githubusercontent.com/59340911/91050004-00e97880-e659-11ea-88c4-a6db4ffbe96d.jpg" title="English Voca">
